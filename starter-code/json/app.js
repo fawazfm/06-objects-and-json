@@ -72,6 +72,45 @@ var grungeAlbums = {
   ]
 };
 
+var grungeAlbumsJSON = JSON.stringify(grungeAlbums)
+console.log(grungeAlbums)
+console.log(JSON.parse(grungeAlbumsJSON))
+
+{
+	"grungeAlbums": {
+		"albums": [{
+				"name": "Bleach",
+				"artist": "Nirvana",
+				"unitsSold": 1700000
+			},
+			{
+				"name": "Nevermind",
+				"artist": "Nirvana",
+				"unitsSold": 30000000
+			},
+			{
+				"name": "In Utero",
+				"artist": "Nirvana",
+				"unitsSold": 15000000
+			},
+			{
+				"name": "Ten",
+				"artist": "Pearl Jam",
+				"unitsSold": 10000000
+			},
+			{
+				"name": "Vs",
+				"artist": "Pearl Jam",
+				"unitsSold": 6100000
+			},
+			{
+				"name": "Vitalogy",
+				"artist": "Pearl Jam",
+				"unitsSold": 4770000
+			}
+		]
+	}
+}
 
 // Imagine that we only had JSON to work with, and wanted to convert it to a JS Object.
 // Fortunately, the `JSON` global object converts both ways - to and from JSON.
@@ -88,3 +127,6 @@ var grungeAlbums = {
 
 // [ Step 5 ] Create a custom JSON using the JSON validator from Step 1.
 // Convert it back to a JavaScript object, change it, and then convert it back to JSON again. Compare it to your original - how has it changed?
+var grungeAlbumsJSON = JSON.stringify(grungeAlbums)
+console.log(grungeAlbums)
+console.log(JSON.parse(grungeAlbumsJSON))
